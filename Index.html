@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+                id="videoPlayer"
+                src=""
+                title="Lecteur vidéo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="watch-info-card">
+              <div class="watch-meta-row">
+                <span class="mini-tag red">Lecture en cours</span>
+                <span class="pill" id="watchGenre"></span>
+                <span class="pill" id="watchDuration"></span>
+                <span class="pill" id="watchAge"></span>
+              </div>
+              <h3 id="watchEpisodeTitle"></h3>
+              <p id="watchEpisodeDescription" class="watch-text"></p>
+              <p id="watchSeriesSynopsis" class="watch-text secondary"></p>
+            </div>
+          </div>
+
+          <aside class="watch-sidebar">
+            <div class="sidebar-card">
+              <h4>Épisodes</h4>
+              <div id="watchEpisodesList" class="sidebar-list"></div>
+            </div>
+
+            <div class="sidebar-card">
+              <h4>Recommandées</h4>
+              <div id="recommendedList" class="sidebar-list"></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="episodes" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Derniers épisodes</p>
+            <h2>Nouveautés</h2>
+            <p class="section-text">Exemples d’épisodes avec visuel, durée et bouton lecture.</p>
+          </div>
+        </div>
+
+        <div class="episode-feed" id="episodesFeed"></div>
+      </div>
+    </section>
+
+    <section id="fiches" class="section alt-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Fiches complètes</p>
+            <h2>Pages séries</h2>
+            <p class="section-text">Bannière, image, synopsis, casting et liste d’épisodes.</p>
+          </div>
+        </div>
+
+        <div class="fiches-list" id="fichesList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <strong>STREAMX</strong>
+        <p>Base V2 HTML/CSS/JS prête à personnaliser.</p>
+      </div>
+      <p>© 2026 — Streaming premium fictif</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
