@@ -1,36 +1,4 @@
 <!DOCTYPE html>
-                id="videoPlayer"
-                src=""
-                title="Lecteur vidéo"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <div class="watch-info-card">
-              <div class="watch-meta-row">
-                <span class="mini-tag red">Lecture en cours</span>
-                <span class="pill" id="watchGenre"></span>
-                <span class="pill" id="watchDuration"></span>
-                <span class="pill" id="watchAge"></span>
-              </div>
-              <h3 id="watchEpisodeTitle"></h3>
-              <p id="watchEpisodeDescription" class="watch-text"></p>
-              <p id="watchSeriesSynopsis" class="watch-text secondary"></p>
-            </div>
-          </div>
-
-          <aside class="watch-sidebar">
-            <div class="sidebar-card">
-              <h4>Épisodes</h4>
-              <div id="watchEpisodesList" class="sidebar-list"></div>
-            </div>
-
-            <div class="sidebar-card">
-              <h4>Recommandées</h4>
-              <div id="recommendedList" class="sidebar-list"></div>
-            </div>
-          </aside>
         </div>
       </div>
     </section>
@@ -68,11 +36,44 @@
     <div class="container footer-wrap">
       <div>
         <strong>STREAMX</strong>
-        <p>Base V2 HTML/CSS/JS prête à personnaliser.</p>
+        <p>Base V3 HTML/CSS/JS prête à personnaliser.</p>
       </div>
       <p>© 2026 — Streaming premium fictif</p>
     </div>
   </footer>
+
+  <div class="modal" id="loginModal" aria-hidden="true">
+    <div class="modal-overlay" id="closeLoginOverlay"></div>
+    <div class="modal-panel login-panel">
+      <button class="modal-close" id="closeLoginBtn">×</button>
+      <div class="login-grid">
+        <div class="login-visual">
+          <div class="login-badge">Bienvenue sur STREAMX</div>
+          <h3>Connexion premium</h3>
+          <p>Interface visuelle type plateforme de streaming. Cette page est décorative et prête à être reliée à un vrai système plus tard.</p>
+          <div class="login-pills">
+            <span class="pill">Design premium</span>
+            <span class="pill">Prêt à brancher</span>
+            <span class="pill">100 % front</span>
+          </div>
+        </div>
+        <form class="login-form" id="loginForm">
+          <h4>Se connecter</h4>
+          <label>
+            <span>Email</span>
+            <input type="email" placeholder="ton@email.com" required />
+          </label>
+          <label>
+            <span>Mot de passe</span>
+            <input type="password" placeholder="••••••••" required />
+          </label>
+          <button type="submit" class="btn btn-primary full">Connexion</button>
+          <button type="button" class="btn btn-ghost full">Créer un compte</button>
+          <p class="login-note">Démo visuelle uniquement. Aucun vrai compte n’est créé.</p>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
